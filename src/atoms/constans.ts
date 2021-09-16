@@ -17,8 +17,11 @@ export const colors = {
   SEC_TEXT_COLOR: '#868686',
   INFO: '#add8e6',
 
-  PRIM_BG: '#121212',
-  SEC_BG: '#171717',
+  // PRIM_BG: '#121212',
+  // SEC_BG: '#171717',
+
+  PRIM_BG: '#12181E',
+  SEC_BG: '#141A21',
 
   BOX_SHADOW: '0px 4px 7px rgba(0, 0, 0, 0.1)',
 }

@@ -30,7 +30,7 @@ const AlreadyLoggedIn: React.FC<Props> = ({ user, useDifferent }) => {
       </UserWrapper>
       <FullButton onClick={() => router.push(`/${user.username}`)}>Use {user.username}</FullButton>
       <Seperator margin=".75rem">or</Seperator>
-      <FullButton onClick={useDifferent} background="#212121">Use a different account</FullButton>
+      <FullButton onClick={useDifferent} background="#11161C">Use a different account</FullButton>
     </>
   )
 }
@@ -39,7 +39,7 @@ const UserWrapper = styled.div`
   padding: 1rem 2rem;
   margin: 1.25rem 0;
   display: flex;
-  background: rgba(0, 0, 0, .2);
+  background: #11161C;
   border-radius: 8px;
 `;
 

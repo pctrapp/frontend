@@ -135,7 +135,7 @@ const FlexBox = styled.div`
 `;
 
 const PrivacyOptionWrapper = styled.div`
-  background: rgba(0, 0, 0, .2);
+  background: #11161C;
   border-radius: 10px;
   padding: 1rem 2rem;
   display: flex;
