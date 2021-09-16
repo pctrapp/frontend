@@ -158,7 +158,14 @@ const Login: NextPage<Props> = ({ error_message, discord_login, user }) => {
 }
 
 export async function getServerSideProps(context: NextPageContext) {
-  const { code } = context.query;  
+  const { code, error_description } = context.query;  
+
+  if (error_description)
+    return {
+      props: {
+        error_message: error_description,
+      }
+    }
 
   if (!code) {
     const session = await getSession(context);
