@@ -78,7 +78,8 @@ const Code = styled.code`
   line-height: 15px;
   overflow-x: auto;
   background: ${colors.PRIM_BG};
-  border: 1px solid #080808;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 3px;
   position: relative;
 `;
 
