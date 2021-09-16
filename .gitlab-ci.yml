@@ -1,0 +1,9 @@
+stages:
+  - production
+    
+production:
+  stage: production
+  script:
+    - bash /opt/deployment/pctr/frontend.sh
+  only:
+    - master
