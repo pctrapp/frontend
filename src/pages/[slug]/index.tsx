@@ -6,7 +6,6 @@ import styled, { CSSProperties } from 'styled-components';
 
 import core from '../../core';
 import { IUser } from '../../types';
-// import { getSession } from '../../lib/auth';
 import { getAvatarURL, getBannerUrl, media, redirect } from '../../lib/utils';
 import { icons } from '../../assets';
 import { typography, colors, layout } from '../../atoms/constans';

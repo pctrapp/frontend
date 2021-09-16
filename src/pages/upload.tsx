@@ -10,9 +10,9 @@ import DefaultHead from '../components/DefaultHead';
 import core from '../core';
 import { ALERT } from '../core/events';
 import { IUser, IFile } from '../types';
-import { getSession } from '../lib/auth';
 import { sleep } from '../lib/utils';
 import File from '../components/File';
+import { getSession } from '../context/auth';
 
 interface Props {
   user?: IUser,
@@ -139,9 +139,9 @@ const Upload: NextPage<Props> = ({ user }) => {
   )
 }
 
-Upload.getInitialProps = async ({ req }) => {
-  const session = getSession(req);
-  return { user: session ? session.user : undefined };
+Upload.getInitialProps = async (ctx) => {
+  const session = await getSession(ctx);
+  return { user: session ? session : undefined };
 }
 
 const Wrapper = styled.div`
