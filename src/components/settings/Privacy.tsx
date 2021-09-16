@@ -146,7 +146,7 @@ const PrivacyOptionWrapper = styled.div`
   cursor: pointer;
 
   &:hover {
-    background: #212121;
+    background: #161C24;
   }
 `;
 
