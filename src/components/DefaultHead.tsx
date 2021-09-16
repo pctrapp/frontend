@@ -16,6 +16,7 @@ const DefaultHead: FC = ({ children }) => {
       <meta property="og:locale" content="en_EN" key="locale" />
       <meta property="og:site_name" content="pctr.app" key="site-name" />
       <meta name="twitter:card" content="summary_large_image" />
+      <link rel="icon" type="image/png" href="https://cdn.pctr.app/assets/pctr_app_pb_transparent.png" />
 
       {children}
     </Head>
