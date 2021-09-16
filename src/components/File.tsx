@@ -7,7 +7,7 @@ import { ALERT } from '../core/events';
 import { IFile } from '../types';
 import Spinner from './Spinner';
 import core from '../core';
-import { getSession } from '../lib/auth';
+import { getCookie } from '../lib/cookie';
 
 interface Props extends IFile {
   username?: string,
@@ -27,7 +27,7 @@ const File: FC<Props> = ({ file, response, username = 'guest', onDelete }) => {
     setLoading(true);
 
     const res = await core.api
-      .with({ options: { headers: { Authorization: `Bearer ${getSession()?.token}` } } })
+      .with({ options: { headers: { Authorization: `Bearer ${getCookie('token', null)}` } } })
       .delete(`images/${response?.slug}`);
 
     if (res.status !== 204) {
