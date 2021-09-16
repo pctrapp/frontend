@@ -19,7 +19,7 @@ const Textarea: FC<Props> = ({ onChange, ...props }) => {
 }
 
 const StyledTextarea = styled('textarea')<{ minHeight?: string }>`
-  background: rgba(0, 0, 0, .2);
+  background: #11161C;
   outline: none;
   color: ${colors.PRIM_TEXT_COLOR};
   width: 100%;

@@ -157,11 +157,11 @@ const Profile: FC<Props> = ({ user: oldUser }) => {
         <ChangeActions>
           <ButtonWrapper>
             <Button 
-              background="#1c1c1c" 
+              background="#181E26" 
               loading={loading === 'profile_picture'}
               onClick={() => profileImageRef.current?.click()}>Change profile picture</Button>
             {user.avatar &&
-              <Button background="#1c1c1c" onClick={() => deleteUserMedia('avatars')}>
+              <Button background="#181E26" onClick={() => deleteUserMedia('avatars')}>
                 <icons.trash width="16px" height="16px" />
               </Button>
             }
@@ -175,11 +175,11 @@ const Profile: FC<Props> = ({ user: oldUser }) => {
         <ProfileHeaderLowerSection>
           <ButtonWrapper>
             <Button 
-              background="#1c1c1c"
+              background="#181E26"
               loading={loading === 'profile_header'}
               onClick={() => profileHeaderRef.current?.click()}>Change profile header</Button>
             {user.banner &&
-              <Button background="#1c1c1c" onClick={() => deleteUserMedia('banners')}>
+              <Button background="#181E26" onClick={() => deleteUserMedia('banners')}>
                 <icons.trash width="16px" height="16px" />
               </Button>
             }
@@ -263,7 +263,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const ContrastBox = styled.div`
-  background: rgba(0, 0, 0, .2);
+  background: #11161C;
   border-radius: 8px;
   margin: 1rem 0;
   padding: 2rem 1rem;

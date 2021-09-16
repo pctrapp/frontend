@@ -55,7 +55,7 @@ const Account: FC<Props> = () => {
 }
 
 const Box = styled.div`
-  background: rgba(0, 0, 0, .2);
+  background: #11161C;
   border-radius: 8px;
   margin: 1rem 0 0 0;
   padding: 2rem;

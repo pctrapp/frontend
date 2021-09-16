@@ -68,6 +68,7 @@ const InputWrapper = styled('div')<{ hasLoader?: boolean, focus: boolean, border
   border: 1px solid rgba(0, 0, 0, .3);
   border-radius: 4px;
   transition: border 200ms;
+  overflow: hidden;
 
   &:hover {
     border: 1px solid #000;
@@ -89,7 +90,7 @@ const InputWrapper = styled('div')<{ hasLoader?: boolean, focus: boolean, border
 `;
 
 const StyledInput = styled('input')`
-  background: rgba(0, 0, 0, .2);
+  background: #11161C;
   outline: none;
   color: ${colors.PRIM_TEXT_COLOR};
   width: 100%;
